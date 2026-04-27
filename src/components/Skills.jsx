@@ -58,14 +58,6 @@ const Skills = () => {
       title: 'Databases & Cloud',
       skills: ['MySQL', 'MongoDB', 'SQL', 'Firebase']
     },
-    {
-      title: 'Tools & Productivity',
-      skills: ['Figma', 'Canva', 'Git', 'Ms Office']
-    },
-    {
-      title: 'Networking & Infrastructure',
-      skills: ['Cisco', 'Windows Server', 'Active Directory', 'TCP/IP', 'Packet Tracer']
-    }
   ];
 
   return (
@@ -94,14 +86,14 @@ const Skills = () => {
               className="glass-card p-8 rounded-[2rem] border border-white/5 dark:border-white/10 shadow-lg hover:shadow-[0_10px_40px_-15px_rgba(37,99,235,0.2)] hover:-translate-y-2 transition-all duration-500 relative overflow-hidden group bg-white dark:bg-slate-900/40"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-primary-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              
+
               <h3 className="text-2xl font-black mb-8 text-slate-900 dark:text-white flex items-center gap-3">
                 <span className="w-10 h-10 rounded-full bg-primary-100 dark:bg-primary-500/20 text-primary-600 dark:text-primary-400 flex items-center justify-center text-sm font-bold border border-primary-500/20">
                   {i + 1}
                 </span>
                 {category.title}
               </h3>
-              
+
               <div className="flex flex-wrap gap-3 relative z-10">
                 {category.skills.map((skill) => (
                   <motion.span
@@ -120,23 +112,23 @@ const Skills = () => {
         <div className="mt-28 py-10 overflow-hidden relative">
           <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-slate-50 dark:from-slate-900/50 to-transparent z-20 pointer-events-none" />
           <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-slate-50 dark:from-slate-900/50 to-transparent z-20 pointer-events-none" />
-          
+
           <div className="flex animate-marquee whitespace-nowrap min-w-max">
             {[
               'Python', 'JavaScript', 'React', 'TypeScript', 'Java',
-              'PHP', 'Figma', 'Git', 'Tailwind', 'Ionic', 'Bootstrap',
-              'Canva', 'Ms Office', 'MongoDB', 'Firebase', 'MySQL', 'SQL',
-              'HTML', 'CSS', 'Cisco'
+              'PHP', 'Tailwind', 'Ionic', 'Bootstrap',
+              'MongoDB', 'Firebase', 'MySQL', 'SQL',
+              'HTML', 'CSS'
             ].concat([
               'Python', 'JavaScript', 'React', 'TypeScript', 'Java',
-              'PHP', 'Figma', 'Git', 'Tailwind', 'Ionic', 'Bootstrap',
-              'Canva', 'Ms Office', 'MongoDB', 'Firebase', 'MySQL', 'SQL',
-              'HTML', 'CSS', 'Cisco'
+              'PHP', 'Tailwind', 'Ionic', 'Bootstrap',
+              'MongoDB', 'Firebase', 'MySQL', 'SQL',
+              'HTML', 'CSS'
             ]).concat([
               'Python', 'JavaScript', 'React', 'TypeScript', 'Java',
-              'PHP', 'Figma', 'Git', 'Tailwind', 'Ionic', 'Bootstrap',
-              'Canva', 'Ms Office', 'MongoDB', 'Firebase', 'MySQL', 'SQL',
-              'HTML', 'CSS', 'Cisco'
+              'PHP', 'Tailwind', 'Ionic', 'Bootstrap',
+              'MongoDB', 'Firebase', 'MySQL', 'SQL',
+              'HTML', 'CSS'
             ]).map((tech, i) => (
               <div key={i} className="flex items-center gap-5 mx-12 cursor-default opacity-80 hover:opacity-100 hover:scale-105 transition-all duration-300">
                 <div className="w-14 h-14 flex items-center justify-center filter drop-shadow-md">

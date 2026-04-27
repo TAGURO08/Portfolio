@@ -116,7 +116,7 @@ const About = () => {
                   {
                     role: 'Freelance Software Developer',
                     company: 'Self-Employed',
-                    period: '2023 - Present',
+                    period: '2024 - Present',
                     desc: 'Specialized in developing software solutions for local businesses and assisting students with academic capstone projects, delivering complete systems from requirement analysis to final deployment.'
                   }
                 ].map((exp, i) => (
@@ -125,8 +125,8 @@ const About = () => {
                     <p className="text-xs font-black uppercase tracking-[0.1em] text-emerald-600 dark:text-emerald-400 mb-1">{exp.period}</p>
                     <h4 className="font-extrabold text-slate-900 dark:text-white text-xl mb-1 transition-colors group-hover:text-emerald-600 dark:group-hover:text-emerald-400">{exp.role}</h4>
                     <p className="text-slate-500 font-bold text-sm mb-3 flex items-center gap-2">
-                       <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-                       {exp.company}
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+                      {exp.company}
                     </p>
                     <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-medium">{exp.desc}</p>
                   </div>

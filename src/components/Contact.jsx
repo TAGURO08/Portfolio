@@ -52,21 +52,29 @@ const Contact = () => {
 
             <div className="grid sm:grid-cols-2 gap-6">
               {[
-                { icon: <MdEmail className="text-blue-600 dark:text-blue-400 text-xl" />, label: 'Email', value: 'eugenemarzan08@gmail.com' },
-                { icon: <MdPhone className="text-green-600 dark:text-green-400 text-xl" />, label: 'Phone', value: '+63 991 469 8202' },
-                { icon: <FaDiscord className="text-purple-600 dark:text-purple-400 text-xl" />, label: 'Discord', value: 'eugene3787' },
-                { icon: <FaFacebookF className="text-blue-700 dark:text-blue-600 text-xl" />, label: 'Facebook', value: 'Eugene Marzan' },
-                { icon: <FaInstagram className="text-pink-600 dark:text-pink-500 text-xl" />, label: 'Instagram', value: '@eugene_marzan' },
+                { icon: <MdEmail className="text-blue-600 dark:text-blue-400 text-xl" />, label: 'Email', value: 'eugenemarzan08@gmail.com', href: 'mailto:eugenemarzan08@gmail.com' },
+                { icon: <MdPhone className="text-green-600 dark:text-green-400 text-xl" />, label: 'Phone', value: '+63 991 469 8202', href: 'tel:+639914698202' },
+                { icon: <FaDiscord className="text-purple-600 dark:text-purple-400 text-xl" />, label: 'Discord', value: 'eugene3787', href: 'https://discord.com/users/779281744884924416' },
+                { icon: <FaFacebookF className="text-blue-700 dark:text-blue-600 text-xl" />, label: 'Facebook', value: 'Eugene Marzan', href: 'https://www.facebook.com/eugene.marzan' },
+                { icon: <FaInstagram className="text-pink-600 dark:text-pink-500 text-xl" />, label: 'Instagram', value: '@eugene_marzan', href: 'https://www.instagram.com/eugene_marzan/' },
               ].map((item, i) => (
-                <div key={i} className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-slate-200 dark:bg-white/5 rounded-full flex items-center justify-center shrink-0">
-                    {item.icon}
+                <a
+                  key={i}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-4 group cursor-pointer"
+                >
+                  <div className="w-12 h-12 bg-slate-200 dark:bg-white/5 group-hover:bg-primary-100 dark:group-hover:bg-primary-900/30 rounded-full flex items-center justify-center shrink-0 transition-colors">
+                    <div className="group-hover:scale-110 transition-transform">
+                      {item.icon}
+                    </div>
                   </div>
                   <div>
                     <p className="text-xs text-slate-500 uppercase font-black tracking-widest">{item.label}</p>
-                    <p className="font-bold text-slate-900 dark:text-white">{item.value}</p>
+                    <p className="font-bold text-slate-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">{item.value}</p>
                   </div>
-                </div>
+                </a>
               ))}
             </div>
           </div>
@@ -87,7 +95,7 @@ const Contact = () => {
                     type="text"
                     name="name"
                     required
-                    placeholder="Juan Dela Cruz"
+                    placeholder="Eugene Marzan"
                     className="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500 text-slate-900 dark:text-white transition-all duration-300"
                   />
                 </div>
@@ -97,7 +105,7 @@ const Contact = () => {
                     type="email"
                     name="email"
                     required
-                    placeholder="juandelacruz@gmail.com"
+                    placeholder="eugenemarzan@gmail.com"
                     className="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500 text-slate-900 dark:text-white transition-all duration-300"
                   />
                 </div>
