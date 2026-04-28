@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Code, Share2, User } from 'lucide-react';
 import HeroImage from '../assets/hero.png';
+import { FaGithub } from "react-icons/fa";
+import { SiIndeed } from "react-icons/si";
 
 const Hero = () => {
   const [text, setText] = useState('');
@@ -72,14 +74,9 @@ const Hero = () => {
             transition={{ delay: 0.5 }}
             className="flex flex-wrap items-center gap-6 mb-10"
           >
-            <button className="btn-primary group flex items-center gap-2">
-              Start a Project
-              <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-            </button>
             <div className="flex items-center gap-4 px-2">
-              <a href="#" className="p-3 bg-slate-100 dark:bg-white/5 hover:bg-slate-200 dark:hover:bg-white/10 rounded-xl transition-all text-slate-600 dark:text-slate-300"><Code size={20} /></a>
-              <a href="#" className="p-3 bg-slate-100 dark:bg-white/5 hover:bg-slate-200 dark:hover:bg-white/10 rounded-xl transition-all text-slate-600 dark:text-slate-300"><User size={20} /></a>
-              <a href="#" className="p-3 bg-slate-100 dark:bg-white/5 hover:bg-slate-200 dark:hover:bg-white/10 rounded-xl transition-all text-slate-600 dark:text-slate-300"><Share2 size={20} /></a>
+              <a href="https://github.com/TAGURO08" className="p-3 bg-slate-100 dark:bg-white/5 hover:bg-slate-200 dark:hover:bg-white/10 rounded-xl transition-all text-slate-600 dark:text-slate-300"><FaGithub size={20} /></a>
+              <a href="#" className="p-3 bg-slate-100 dark:bg-white/5 hover:bg-slate-200 dark:hover:bg-white/10 rounded-xl transition-all text-slate-600 dark:text-slate-300"><SiIndeed size={20} /></a>
             </div>
           </motion.div>
 
