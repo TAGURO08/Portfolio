@@ -61,43 +61,7 @@ const About = () => {
               ))}
             </div>
 
-            <div className="space-y-8">
-              <h3 className="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
-                <div className="w-8 h-8 rounded-lg bg-primary-500/10 flex items-center justify-center">
-                  <span className="text-primary-600 dark:text-primary-400 text-lg">🎓</span>
-                </div>
-                Education & Background
-              </h3>
-
-              <div className="relative pl-8 border-l-2 border-slate-200 dark:border-white/5 space-y-8">
-                {[
-                  {
-                    degree: 'Bachelor of Science in Information Technology',
-                    major: 'Major in Database System Technology',
-                    school: 'Nueva Ecija University of Science and Technology',
-                    period: '2021 - 2025',
-                    desc: 'Graduated with Academic Distinction Award. Specialized in designing, implementing, and managing complex database architectures and high-performance server systems.'
-                  },
-                  {
-                    degree: 'Senior High School - ICT Strand',
-                    school: 'Talavera Senior High School',
-                    period: '2019 - 2021',
-                    desc: 'Focused on Computer Networking basics.'
-                  }
-                ].map((edu, i) => (
-                  <div key={i} className="relative group">
-                    <div className="absolute -left-[41px] top-1 w-4 h-4 rounded-full bg-primary-500 border-4 border-white dark:border-slate-900 transition-all duration-300 group-hover:scale-125 group-hover:shadow-[0_0_15px_rgba(59,130,246,0.6)]" />
-                    <p className="text-xs font-black uppercase tracking-[0.1em] text-primary-600 dark:text-primary-400 mb-1">{edu.period}</p>
-                    <h4 className="font-extrabold text-slate-900 dark:text-white text-xl mb-1 transition-colors group-hover:text-primary-600 dark:group-hover:text-primary-400">{edu.degree}</h4>
-                    {edu.major && <p className="text-primary-500 font-bold text-sm mb-2">{edu.major}</p>}
-                    <p className="text-slate-500 font-semibold mb-2">{edu.school}</p>
-                    <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-medium">{edu.desc}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="space-y-8 mt-16 pt-16 border-t border-slate-200 dark:border-white/5 text-left">
+            <div className="space-y-8 text-left">
               <h3 className="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
                 <div className="w-8 h-8 rounded-lg bg-emerald-500/10 flex items-center justify-center">
                   <span className="text-emerald-600 dark:text-emerald-400 text-lg">💼</span>
@@ -129,6 +93,36 @@ const About = () => {
                       {exp.company}
                     </p>
                     <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-medium">{exp.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="space-y-8 mt-16 pt-16 border-t border-slate-200 dark:border-white/5">
+              <h3 className="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                <div className="w-8 h-8 rounded-lg bg-primary-500/10 flex items-center justify-center">
+                  <span className="text-primary-600 dark:text-primary-400 text-lg">🎓</span>
+                </div>
+                Education & Background
+              </h3>
+
+              <div className="relative pl-8 border-l-2 border-slate-200 dark:border-white/5 space-y-8">
+                {[
+                  {
+                    degree: 'Bachelor of Science in Information Technology',
+                    major: 'Major in Database System Technology',
+                    school: 'Nueva Ecija University of Science and Technology',
+                    period: '2021 - 2025',
+                    desc: 'Graduated with Academic Distinction Award. Specialized in designing, implementing, and managing complex database architectures and high-performance server systems.'
+                  }
+                ].map((edu, i) => (
+                  <div key={i} className="relative group">
+                    <div className="absolute -left-[41px] top-1 w-4 h-4 rounded-full bg-primary-500 border-4 border-white dark:border-slate-900 transition-all duration-300 group-hover:scale-125 group-hover:shadow-[0_0_15px_rgba(59,130,246,0.6)]" />
+                    <p className="text-xs font-black uppercase tracking-[0.1em] text-primary-600 dark:text-primary-400 mb-1">{edu.period}</p>
+                    <h4 className="font-extrabold text-slate-900 dark:text-white text-xl mb-1 transition-colors group-hover:text-primary-600 dark:group-hover:text-primary-400">{edu.degree}</h4>
+                    {edu.major && <p className="text-primary-500 font-bold text-sm mb-2">{edu.major}</p>}
+                    <p className="text-slate-500 font-semibold mb-2">{edu.school}</p>
+                    <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-medium">{edu.desc}</p>
                   </div>
                 ))}
               </div>

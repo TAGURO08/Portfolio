@@ -35,8 +35,8 @@ const Navbar = ({ isDarkMode, toggleTheme }) => {
           animate={{ opacity: 1, x: 0 }}
           className="text-2xl font-bold tracking-tighter flex items-center gap-2"
         >
-          <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center shadow-lg shadow-primary-500/20">
-            <span className="text-white text-lg font-black">E</span>
+          <div className="w-10 h-10 overflow-hidden rounded-lg flex items-center justify-center shadow-lg">
+            <img src="/portfolio_logo.png" alt="Logo" className="w-full h-full object-cover" />
           </div>
           <span className="text-slate-900 dark:text-white">Eugene.dev</span>
         </motion.div>
